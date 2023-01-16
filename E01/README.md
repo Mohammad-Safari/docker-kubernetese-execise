@@ -1,4 +1,4 @@
-# Usage
+# Instructions
 
 ## dependencies
 
@@ -31,3 +31,7 @@ docker run -p <port>:<port> e01:0.1
 * default on 8080
 * ```PROGRAM_PORT``` variable
 * ```--program-port``` command line option
+
+## logs
+
+Application logs are formatted in Json and written in standard output. Besides, http logging of the service is powered by w3c logging format, and stored in ``/var/log/e01`` directory.
