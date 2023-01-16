@@ -2,7 +2,7 @@
 
 ## dependencies
 
-The Http Service is based on ```dotnet-sdk 7.0```, ```dotnet-runtime 7.0``` and ```aspnet-runtime 7.0```
+The Http Service is based on ```dotnet-sdk 7.0```, ```dotnet-runtime 7.0``` and ```aspnet-runtime 7.0``` packages. Usage is also possible on top of ```mcr.microsoft.com/dotnet/sdk:7.0``` (for compiling) and ```mcr.microsoft.com/dotnet/aspnet:7.0``` (for runtime) docker images.
 
 ## development
 
@@ -14,9 +14,8 @@ dotnet run
 ## production
 
 ```bash
-dotnet restore
-dotnet publish -c Release
-dotnet /bin/Release/publish/E01.dll
+dotnet publish -c Release -o publishDir
+dotnet publishDir/E01.dll
 ```
 
 ## container
