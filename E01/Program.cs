@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var port = Environment.GetEnvironmentVariable("PROGRAM_PORT") ?? "8080";
@@ -21,5 +23,7 @@ app.UseRouting();
 app.UseAuthorization();
 
 app.MapRazorPages();
+
+app.MapGet("/hello", ([FromQuery(Name = "name")] string? name) => $"Hello {name ?? "Stranger"}");
 
 app.Run();
