@@ -21,7 +21,7 @@ java -jar e01 build/libs/e01-0.0.1-SNAPSHOT.jar
 
 ```bash
 docker build -t e01-spring:0.0.1 -f Dockerfile .
-docker run -p <port>:<port> e01:0.0.1
+docker run -p <port>:<port> e01-spring:0.0.1
 ```
 
 ## http port setting
