@@ -4,6 +4,6 @@ name: e02
 nodes:
 - role: control-plane
   extraPortMappings:
-    - containerPort: 8080
+    - containerPort: 32180
       hostPort: 8080
       protocol: TCP
